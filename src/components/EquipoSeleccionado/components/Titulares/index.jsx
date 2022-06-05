@@ -1,21 +1,19 @@
 import { connect } from "react-redux"
+import Jugador from "../../../Jugadores/Jugador"
+import { JugadoresSection } from "../../../Jugadores/style"
 
 const Titulares = ({titulares}) =>{
     return(
-        <section>
+        <JugadoresSection>
             <h2>Titulares</h2>
             <div className="cancha">
                 {
                     titulares.map( (j, i) =>(
-                        <article key={i} className="titulares">
-                            <img src={j.photo} alt={j.name} />
-                            <p>{j.name}</p>
-                            <button>x</button>
-                        </article>
+                        <Jugador key={i} name={j.name} photo={j.photo} colocado={true} />
                     ))
                 }
             </div>
-        </section>
+        </JugadoresSection>
     )
 }
 

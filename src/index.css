@@ -3,3 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+h1{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(22, 84, 190);
+  color: #fff;
+  padding: 5px;
+}

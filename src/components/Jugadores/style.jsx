@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const JugadoresSection = styled.section`
     width: 95%;
     padding: 12px;
-    margin: auto;
+    margin: 20px auto;
     background: #ccc;
     border-radius: 5px;
     .container-jugadores{
@@ -25,9 +25,15 @@ export const CardJugador = styled.article`
         width: 100%;
         
     }
+
     .actions{
         padding: 0 5px;
         display: flex;
         justify-content: space-between;
+    }
+
+    .delete{
+        width: 90%;
+        margin: 0 5%;
     }
 `;
