@@ -18,6 +18,7 @@ const INITIAL_STATE = {
 }
 
 const reducerEntrenador = (state = INITIAL_STATE, action) =>{
+    console.log(action);
     return state
 }
 
