@@ -4,7 +4,7 @@ export const JugadoresSection = styled.section`
     width: 95%;
     padding: 12px;
     margin: 20px auto;
-    background: #ccc;
+    background: #ccccccbe;
     border-radius: 5px;
     .container-jugadores, .cancha{
         display: flex;
