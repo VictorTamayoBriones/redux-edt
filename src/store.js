@@ -18,7 +18,10 @@ const INITIAL_STATE = {
 }
 
 const reducerEntrenador = (state = INITIAL_STATE, action) =>{
-    console.log(action);
+
+    if(action.type === "ADD_TO_TITULARES"){
+        console.log(action);
+    }
     return state
 }
 
