@@ -25,7 +25,9 @@ export const CardJugador = styled.article`
         width: 100%;
         
     }
-
+    h3{
+        padding: 0 5px;
+    }
     .actions{
         padding: 0 5px;
         display: flex;
@@ -35,5 +37,17 @@ export const CardJugador = styled.article`
     .delete{
         width: 90%;
         margin: 0 5%;
+    }
+
+    @media(max-width:674px){
+        width: 150px;
+        height: max-content;
+        .actions{
+            padding: 0;
+            button{
+                width: 50%;
+                font-size: 12px;
+            }
+        }
     }
 `;

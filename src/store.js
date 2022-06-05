@@ -23,7 +23,7 @@ const reducerEntrenador = (state = INITIAL_STATE, action) =>{
         return{
             ...state,
             titulares: state.titulares.concat(action.j),
-            jugadores: state.jugadores.filter( j => j.name != action.j.name)
+            jugadores: state.jugadores.filter( j => j.name !== action.j.name)
         }
     }
 
@@ -31,7 +31,7 @@ const reducerEntrenador = (state = INITIAL_STATE, action) =>{
         return{
             ...state,
             suplentes: state.suplentes.concat(action.j),
-            jugadores: state.jugadores.filter( j => j.name != action.j.name )
+            jugadores: state.jugadores.filter( j => j.name !== action.j.name )
         }
     }
 
@@ -39,8 +39,8 @@ const reducerEntrenador = (state = INITIAL_STATE, action) =>{
         return{
             ...state,
             jugadores: state.jugadores.concat(action.j),
-            titulares: state.titulares.filter( j => j.name != action.j.name ),
-            suplentes: state.suplentes.filter( j => j.name != action.j.name )
+            titulares: state.titulares.filter( j => j.name !== action.j.name ),
+            suplentes: state.suplentes.filter( j => j.name !== action.j.name )
         }
     }
 
