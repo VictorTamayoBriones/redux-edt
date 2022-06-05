@@ -26,6 +26,15 @@ const reducerEntrenador = (state = INITIAL_STATE, action) =>{
             jugadores: state.jugadores.filter( j => j.name != action.j.name)
         }
     }
+
+    if( action.type === "ADD_TO_SUPLENTES" ){
+        return{
+            ...state,
+            suplentes: state.suplentes.concat(action.j),
+            jugadores: state.jugadores.filter( j => j.name != action.j.name )
+        }
+    }
+
     return state
 }
 
