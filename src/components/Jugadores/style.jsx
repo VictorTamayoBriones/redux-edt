@@ -6,7 +6,7 @@ export const JugadoresSection = styled.section`
     margin: 20px auto;
     background: #ccc;
     border-radius: 5px;
-    .container-jugadores{
+    .container-jugadores, .cancha{
         display: flex;
         gap: 8px;
         flex-wrap: wrap;
