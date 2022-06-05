@@ -20,7 +20,11 @@ const INITIAL_STATE = {
 const reducerEntrenador = (state = INITIAL_STATE, action) =>{
 
     if(action.type === "ADD_TO_TITULARES"){
-        console.log(action);
+        return{
+            ...state,
+            titulares: state.titulares.concat(action.j),
+            jugadores: state.jugadores.filter( j => j.name != action.j.name)
+        }
     }
     return state
 }
