@@ -35,6 +35,15 @@ const reducerEntrenador = (state = INITIAL_STATE, action) =>{
         }
     }
 
+    if( action.type === "REMOVE_PLAYER" ){
+        return{
+            ...state,
+            jugadores: state.jugadores.concat(action.j),
+            titulares: state.titulares.filter( j => j.name != action.j.name ),
+            suplentes: state.suplentes.filter( j => j.name != action.j.name )
+        }
+    }
+
     return state
 }
 

@@ -9,7 +9,7 @@ const Suplentes = ({suplentes})=>{
             <div className="cancha">
                 {
                     suplentes.map( (j, i) =>(
-                        <Jugador key={i} name={j.name} photo={j.photo} colocado={true} />
+                        <Jugador key={i} name={j.name} photo={j.photo} player={j} colocado={true} />
                     ))
                 }
             </div>
